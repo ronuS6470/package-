@@ -1,3 +1,6 @@
+/**
+ * @author Ronak Patel.
+ */
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -12,7 +15,7 @@ export class TableComponent implements OnInit {
   public tableKey: any[];
 
   // get value from user;
-  @Input() set data(data: any) {
+  @Input() set data(data: any[]) {
     if (data) {
       this.tableData = data;
       data.forEach(element => {
